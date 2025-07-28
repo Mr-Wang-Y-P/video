@@ -6,8 +6,15 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [{
-      "src": "/(.*)",
-      "dest": "/index.js"
-    }]
+   "headers": [
+    {
+      "source": "**/*.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ]
   }
