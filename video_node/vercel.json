@@ -6,9 +6,9 @@
         "use": "@vercel/node"
       }
     ],
-   "headers": [
+  "headers": [
     {
-      "source": "**/*.js",
+      "source": "/(.*)\\.js",
       "headers": [
         {
           "key": "Content-Type",
